@@ -20,3 +20,8 @@ for record in df.to_dict(orient="records"):
     doc.render(record)
     output_path = output_dir / f"{record['NAME of the DOC']}-Doc.docx"
     doc.save(output_path)
+
+
+    for e in final_tested_version_result:
+        e.append(Latest_Version)
+print(final_tested_version_result)
